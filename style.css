@@ -152,3 +152,74 @@ margin-left: 10px;
     margin-bottom: 10px;
     margin-left: 9px;
 }
+
+.form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+  .titleSubject{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  body > div.row{
+    margin-bottom: 100px;
+  }
+  .them{
+ 
+    margin-top: 4px;
+  }
+  .titleh1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+  }
+.anh{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 100%;
+}
