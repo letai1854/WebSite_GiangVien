@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="myScript/script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <title>Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
     <link rel="stylesheet" href="style.css">
-   
+
+
+
+ 
+    <style>
+        /* CSS cho phần message */
+        #message {
+            margin-top: 20px;
+        }
+        #text-area {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -29,53 +34,118 @@
                 </div>
             </div>
       </div>
-      <div class="titleSubject">
-        <h1 class=" " style="color: rgba(4, 17, 255, 0.966);">LẬP TRÌNH WEB VÀ ỨNG DỤNG</h1>
-      </div>
-      <div class="row  container">
-        <div class="col-xl-9 col-md-6 col-12">
-          <div class="container">
-            <h2 class="text-center" style="color: rgba(255, 21, 4, 0.966);">Sửa tài liệu</h2>
-            <form action="#" method="post" class="formSubject">
-              <div class="form-group">
-                <label for="name">Tên tài liệu:</label>
-                <input type="text" id="name" name="name" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="type">Loại:</label>
-                <select id="type" name="type" class="form-control">
-                  <option value="theory">Lý thuyết</option>
-                  <option value="practice">Thực hành</option>
-                  <option value="other">Khác</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="publish_date">Ngày đăng:</label>
-                <input type="date" id="publish_date" name="publish_date" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="image">Chọn ảnh đại diện:</label>
-                <input type="file" id="image" name="image" accept="image/*" class="form-control-file">
-              </div>
-              
-              <div class="form-group">
-                <label for="document">Chọn file:</label>
-                <input type="file" id="document" name="document" accept=".pdf,.doc,.docx" class="form-control-file">
-              </div>
-                            
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary">Xác nhận</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-      </div>
-  
+      <div class="titleh1">
 
-  
-  <footer id="footer" class="pt-4 footer divider layer-overlay  bg-theme-colored-gray mt-30" style="background-color: rgba(12, 12, 12, 0.905);">
+        <h1 class=" " style="color: rgba(4, 17, 255, 0.966);">CẬP NHẬT THÔNG TIN</h1>
+
+      </div>
+      <hr style="color: red; border-top: 2px solid red; font-weight: bold;"> </p></div>
+   <div class="container ct">
+    <div class="text-center" style="font-size: 1.8rem;font-weight: bold; color:rgba(255, 0, 0, 0.793); "><p>Thông tin<br>
+    </div>
+<div class="formSubject form1">
+    <div class="category">
+        <label for="heading" >Tiêu đề:</label>
+    <input type="text" id="heading"><br>
+    </div>
+    <div >
+        <label for="job-type" style="margin-right: 26px;" >Loại:</label>
+        <select id="job-type" >
+            <option value="vieclam">Việc làm</option>
+            <option value="thongbao">Thông báo</option>
+            <option value="tintuc">Tin tức</option>
+        </select>
+    </div>
+<br><br>
+    <div id="message">
+        <button onclick="changeFontSize() "  style="    border-radius: 4px;
+        ">Font size</button>
+        <button onclick="changeFontColor()" style="    border-radius: 4px;
+        ">Color</button>
+        <button onclick="changeFontStyle('italic')" style="width: 40px;     border-radius: 4px;
+        " >I</button>
+        <button onclick="changeFontStyle('bold')" style="width: 40px;     border-radius: 4px;
+        " >B</button>
+        <button onclick="underlineText()" style="width: 40px;     border-radius: 4px;
+        " >U</button>
+        <button onclick="alignText('left')" style="width: 40px;     border-radius: 4px;
+        " ><i class="fas fa-align-left"></i></button>
+        <button onclick="alignText('center')" style="width: 40px;     border-radius: 4px;
+        " ><i class="fas fa-align-justify"></i></button>
+        <button onclick="alignText('right')" style="width: 40px;     border-radius: 4px;
+        " ><i class="fas fa-align-right"></i></button>
+        <button onclick="addImage()" style="    border-radius: 4px;
+        "><i class="fas fa-image     border-radius: 4px;
+            "></i> Chèn ảnh</button>
+<button onclick="addLink()" style="    border-radius: 4px;
+"><i class="fas fa-link     border-radius: 4px;
+    "></i> Chèn liên kết</button><br>
+
+        <textarea id="text-area" placeholder="Nhập văn bản" style="width:700px"></textarea>
+    </div>
+    <button onclick="submitData()" class="" style="background-color:green; color:aliceblue;  padding:2px; border-radius:4px">Xác nhận</button>
+
+    <script>
+        function changeFontSize() {
+            var size = prompt("Nhập cỡ chữ (px):");
+            document.getElementById("text-area").style.fontSize = size + "px";
+        }
+
+        function changeFontColor() {
+            var color = prompt("Nhập mã màu (ví dụ: #ff0000):");
+            document.getElementById("text-area").style.color = color;
+        }
+
+        function changeFontStyle(style) {
+            var textarea = document.getElementById("text-area");
+            if (style === "italic") {
+                textarea.style.fontStyle = textarea.style.fontStyle === "italic" ? "normal" : "italic";
+            } else if (style === "bold") {
+                textarea.style.fontWeight = textarea.style.fontWeight === "bold" ? "normal" : "bold";
+            }
+        }
+
+        function underlineText() {
+            var textarea = document.getElementById("text-area");
+            textarea.style.textDecoration = textarea.style.textDecoration === "underline" ? "none" : "underline";
+        }
+
+        function alignText(align) {
+            document.getElementById("text-area").style.textAlign = align;
+        }
+
+        function addImage() {
+            var url = prompt("Nhập URL của ảnh:");
+            var imgTag = "<img src='" + url + "' alt=''>";
+            document.getElementById("text-area").value += imgTag;
+        }
+
+        function addLink() {
+            var url = prompt("Nhập URL của liên kết:");
+            var text = prompt("Nhập văn bản của liên kết:");
+            var linkTag = "<a href='" + url + "'>" + text + "</a>";
+            document.getElementById("text-area").value += linkTag;
+        }
+
+        function submitData() {
+            var heading = document.getElementById("heading").value;
+            var jobType = document.getElementById("job-type").value;
+            var message = document.getElementById("text-area").value;
+            // Đoạn này bạn có thể sử dụng AJAX hoặc gửi dữ liệu đến server theo yêu cầu của bạn
+            // Ở đây chỉ là một ví dụ đơn giản
+            console.log("Tiêu đề:", heading);
+            console.log("Loại công việc:", jobType);
+            console.log("Nội dung:", message);
+            alert("Đã gửi dữ liệu!");
+        }
+    </script>
+
+
+
+
+</div>
+   </div>
+   <footer id="footer" class="pt-4 footer divider layer-overlay  bg-theme-colored-gray mt-30" style="background-color: rgba(12, 12, 12, 0.905); ">
     <div class="container">
         <div class="row ">
             <div class="col-md-4">
